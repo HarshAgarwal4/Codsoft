@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        a simple calculator
+    </header>
+    <div class="main">
+
+        <div class="calculator">
+            <div class="screen">
+                <div class="display on_off"></div>
+        </div>
+        <div class="acc">
+            <button class="key1" onclick="clearDisplay()">C</button>
+            <button class="key">DEL</button>
+            <button class="key1" onclick="on_off()">on/off</button>
+        </div>
+        <div class="keys">
+            <button class="key">(</button>
+            <button class="key">)</button>
+            <button class="key">%</button>
+            <button class="key">/</button>
+            <button class="key">7</button>
+            <button class="key">8</button>
+            <button class="key">9</button>
+            <button class="key">*</button>
+            <button class="key">4</button>
+            <button class="key">5</button>
+            <button class="key">6</button>
+            <button class="key">-</button>
+            <button class="key">1</button>
+            <button class="key">2</button>
+            <button class="key">3</button>
+            <button class="key">+</button>
+            <button class="key">00</button>
+            <button class="key">0</button>
+            <button class="key">.</button>
+            <button class="key">=</button>
+            <button class="key"></button>
+        </div>
+    </div>
+    <div class="instructions">
+        <h2>General Instructions for using this calculator</h2>
+        <ul>
+            <li>'+' ---- >  used to add two numbers</li>
+            <li>'-' ---- >  used to subtract two numbers</li>
+            <li>'*' ---- >  used to multiply two numbers</li>
+            <li>'/' ---- >  used to division two numbers</li>
+            <li>'**' ---- >  power operator eg:- 2**6 = 64 means 2 to the power 6 </li>
+            <li>'c' ---- >  clears screen</li>
+            <li>'DEl' ---- >  DEL number or Backspace</li>
+            <li>'%' ---- >  used to get remainder eg:- if you write 5%2 <br>you will get 1 not 5% of 2 due to fact 5/2  leaves remainder 1</li>
+        </ul>
+    </div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>

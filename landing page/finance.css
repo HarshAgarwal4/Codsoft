@@ -1,0 +1,102 @@
+/* Sell Your Car Section */
+.sell-your-car {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+.sell-your-car button {
+    background: #f57c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sell-your-car button:hover {
+    background: #d96b00;
+}
+
+.financing {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.financing button {
+    background: #f57c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.financing button:hover {
+    background: #d96b00;
+}
+
+.img3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#car4 {
+    height: 100%;
+    width: 60%;
+}
+
+#scar {
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    margin: 15px auto;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width:900px) {
+    #scar {
+        height: 45vh;
+        object-fit: fill;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sell-your-car {
+        grid-template-columns: 100%;
+    }
+
+    #car4 {
+        width: 40%;
+        aspect-ratio: 1/1;
+        object-fit: fill;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #scar {
+        height: 30vh;
+        object-fit: fill;
+    }
+    #car4{
+        display: none;
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #car4{
+        width: 70%;
+    }
+}

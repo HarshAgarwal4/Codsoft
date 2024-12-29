@@ -1,0 +1,88 @@
+.featured-cars {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+.featured-cars h2{
+    font-size: 2.5em;
+    margin: 35px auto;
+}
+
+.cars-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.car {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 280px;
+    text-align: left;
+}
+
+.car:hover {
+    transform: translateY(-10px);
+}
+
+.car img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.car h3 {
+    font-size: 1.2em;
+    margin: 10px;
+    color: #333;
+}
+
+.car p {
+    font-size: 1.1em;
+    color: #f57c00;
+    margin: 10px;
+}
+
+.car button {
+    background: #f57c00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.car button:hover {
+    background: #d96b00;
+}
+
+#morep{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+    flex-direction: column;
+    gap: 20px;
+}
+#more{
+    background: #d96b00;
+    font-size: 1em;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

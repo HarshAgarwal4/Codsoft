@@ -1,0 +1,83 @@
+/* Reviews Section */
+.reviews {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.rev1 {
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.comments {
+
+    overflow: auto;
+}
+
+.review {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review strong {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact-us {
+    width: 80%;
+    height: 80%;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-us button {
+    background: #f57c00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    margin: 20px auto;
+}
+
+.contact-us button:hover {
+    background: #d96b00;
+}
+
+@media only screen and (max-width: 600px) {
+    .reviews {
+        grid-template-columns: 100%;
+    }
+}
